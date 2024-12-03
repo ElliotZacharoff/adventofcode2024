@@ -1,5 +1,5 @@
 def read_left_right():
-    file = open("input.txt", "r").readlines()
+    file = open("ex.txt", "r").readlines()
     pairs, left, right = [], [], []
     for line in file:
         line.strip("\n")
@@ -12,3 +12,10 @@ def read_left_right():
     return left, right
 
 left, right = read_left_right()
+distance = 0
+for i in range(len(right)):
+    left.sort()
+    right.sort()
+    distance += abs(left[i] - right[i])
+
+print(distance)

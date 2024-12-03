@@ -38,6 +38,4 @@ for i in range(len(left)):
         result = dupe_count_left*num_left
         similarity += num_left*dupe_count_left
 
-
 print(f"similarity_score: {similarity}")
-
